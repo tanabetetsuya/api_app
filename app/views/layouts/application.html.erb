@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ApiApp</title>
+    <%= csrf_meta_tags %>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <span id="back">
+     <a href="#">
+       <img src="assets/arrow.png" alt="">
+     </a>
+    </span>
+    <script src="javascripts/jquery.min.js"></script>
+  </body>
+</html>
